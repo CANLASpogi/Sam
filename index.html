@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 🌷</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 100px;
+      background: #fffbe6;
+    }
+    #flower {
+      font-size: 500px;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+    }
+    #mainText {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+      opacity: 0;
+      transition: opacity 2s ease-in 0.5s;
+    }
+    #subText {
+      font-size: 24px;
+      color: #555;
+      margin-top: 0;
+      opacity: 0;
+      transition: opacity 2s ease-in 1s;
+    }
+    a {
+      display: inline-block;
+      font-size: 24px;
+      text-decoration: none;
+      color: #1a73e8;
+      margin-bottom: 30px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<a href="#" onclick="showSurprise()">Click here for a surprise 🌷</a>
+
+<div id="flower">&#127799;</div>
+<p id="mainText">Hi pretty girl, tulip for you</p>
+<p id="subText">A little flower to brighten your day</p>
+
+<script>
+function showSurprise() {
+  document.getElementById("flower").style.opacity = 1;
+  document.getElementById("mainText").style.opacity = 1;
+  document.getElementById("subText").style.opacity = 1;
+}
+</script>
+
+</body>
+</html>
