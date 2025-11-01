@@ -28,6 +28,14 @@
       opacity: 0;
       transition: opacity 2s ease-in 1s;
     }
+    #photo {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      margin-top: 20px;
+      opacity: 0;
+      transition: opacity 2s ease-in 1.5s;
+    }
     a {
       display: inline-block;
       font-size: 24px;
@@ -47,12 +55,14 @@
 <div id="flower">&#127799;</div>
 <p id="mainText">Hi pretty cutie girl, tulip for you</p>
 <p id="subText">A little flower to brighten your day</p>
+<img id="photo" src="https://raw.githubusercontent.com/yourusername/yourrepo/main/a5b4507f-0b45-4096-82cd-dff5dcfe7d34.jpg" alt="Her Photo">
 
 <script>
 function showSurprise() {
   document.getElementById("flower").style.opacity = 1;
   document.getElementById("mainText").style.opacity = 1;
   document.getElementById("subText").style.opacity = 1;
+  document.getElementById("photo").style.opacity = 1;
 }
 </script>
 
